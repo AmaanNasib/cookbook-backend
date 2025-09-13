@@ -1,0 +1,10 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 8003,
+  "username": "postgres",
+  "password": "amaan252003",
+  "database": "supercookdb",
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "synchronize": true
+}
