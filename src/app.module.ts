@@ -4,6 +4,7 @@ import { RecipesModule } from './recipes/recipes.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
+import { MockRecipesController } from './mock-recipes/mock-recipes.controller';
 
 @Module({
   imports: [
@@ -24,7 +25,7 @@ import { UsersModule } from './users/users.module';
     UsersModule,
     RecipesModule,
   ],
-  controllers: [],
+  controllers: [MockRecipesController],
   providers: [],
 })
 export class AppModule {}
